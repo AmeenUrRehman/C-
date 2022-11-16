@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// Book Allocation Problem
 
 bool isPossible(int arr[] , int size , int m , int mid){
     int StudentCount = 0;
