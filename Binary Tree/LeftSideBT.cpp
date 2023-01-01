@@ -7,6 +7,7 @@
      if(level == ans.size()){
          ans.push_back(root -> data);
      }
+     
      solve(root -> left , ans , level + 1);
      solve(root -> right , ans , level + 1);
  }
