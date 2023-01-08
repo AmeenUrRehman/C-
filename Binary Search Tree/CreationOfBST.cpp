@@ -53,7 +53,7 @@ Node* InsertIntoBST(Node* &root, int d){
     if(d > root -> data){
         //Right Part me Insert
         root -> right = InsertIntoBST(root ->right, d);
-    }
+    } //Left Part me Insert
     else{
         root -> left = InsertIntoBST(root ->left, d);
     }
