@@ -43,6 +43,22 @@ void levelOfTraversal(Node* root){
 
 }
 
+Node* MinVal(Node* root){
+    Node* temp = root;
+    while(temp -> left != NULL){
+        temp = temp -> left;
+    }
+    return temp;
+}
+
+Node* MaxVal(Node* root){
+    Node* temp = root;
+    while(temp -> right != NULL){
+        temp = temp -> right;
+    }
+    return temp;
+}
+
 void InOrder(Node* root){
     //Base Case
     if(root == NULL){
@@ -85,11 +101,22 @@ int main(){
     Node* root = NULL;
     cout << "Enter data to create BST " << endl;
     takeInput(root);
+    cout << endl;
 
     cout << "How BST Looks like" << endl;
     levelOfTraversal(root);
+    
 
     cout << "printing of BST in Inorder" << endl;
     InOrder(root);
+    cout << endl;
+
+    cout << "Enter the Min Node value in BST :";
+    cout<< MinVal(root) -> data << endl;
+    cout << endl;
+    
+    cout << "Enter the Max Node value in BST :";
+    cout<< MaxVal(root) -> data << endl;
+    cout << endl;
 
 }
