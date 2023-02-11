@@ -47,7 +47,9 @@
         "stack": "cpp",
         "deque": "cpp",
         "queue": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "list": "cpp",
+        "xhash": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
