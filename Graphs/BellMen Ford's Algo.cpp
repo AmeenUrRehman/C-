@@ -27,7 +27,7 @@ int bellmonFord(int n, int m, int src, int dest, vector<vector<int>> &edges) {
             int wt = edges[j][2];
 
             if(dist[u] != 1e9 && ((dist[u] + wt < dist[v]))){
-                flag = 1;
+                flag = 1; // Means negative cycle
             }
         }
 
